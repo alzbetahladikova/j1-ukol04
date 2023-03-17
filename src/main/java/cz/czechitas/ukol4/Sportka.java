@@ -25,8 +25,8 @@ public class Sportka {
      * @see Collections#shuffle(List)
      */
     public void zamichat() {
-        //TODO zamíchat osudí
-
+        shuffle(osudi,new Random()); //TODO zamíchat osudí
+        System.out.println(osudi);
 
 
     }
