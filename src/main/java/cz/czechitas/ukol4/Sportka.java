@@ -25,8 +25,8 @@ public class Sportka {
      * @see Collections#shuffle(List)
      */
     public void zamichat() {
-        shuffle(osudi,new Random()); //TODO zamíchat osudí
-        System.out.println(osudi);
+        shuffle(osudi,new Random());
+
 
 
     }
@@ -39,7 +39,12 @@ public class Sportka {
      */
     public List<Integer> vylosovanaCisla() {
         //TODO Vrátit seznam prvních 6 čísel z osudí.
-        return null;
+        List<Integer> vylosovane = new ArrayList<>();
+
+        for (int i = 0; i < 6; i++) {
+           vylosovane.add(osudi.get(0+i));
+        }
+        return vylosovane;
     }
 
     /**
@@ -48,8 +53,8 @@ public class Sportka {
      * @return Dodatkové číslo.
      */
     public Integer dodatkoveCislo() {
-        //TODO Vrátit sedmé číslo z osudí.
-        return null;
+       int a = osudi.get(6); //TODO Vrátit sedmé číslo z osudí.
+        return a;
     }
 
 
