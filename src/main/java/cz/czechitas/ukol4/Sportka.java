@@ -35,11 +35,12 @@ public class Sportka {
      * @see List#subList(int, int)
      */
     public List<Integer> vylosovanaCisla() {
-        List<Integer> vylosovane = new ArrayList<>();
+       /* List<Integer> vylosovane = new ArrayList<>();
         for (int i = 0; i < 6; i++) {
             vylosovane.add(osudi.get(i));
         }
-        return vylosovane;
+        return vylosovane;*/
+       return osudi.subList(0,6);
     }
 
     /**
